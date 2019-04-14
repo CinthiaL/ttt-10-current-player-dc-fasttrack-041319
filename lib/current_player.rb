@@ -7,9 +7,9 @@ def turn_count
     end
     return count
     
-def current_player(count)
+def current_player(board)
   if count.even?
-    puts "It is the first player"
+    puts "O"
   else 
     puts "It is the second player"
   end
