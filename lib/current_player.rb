@@ -1,17 +1,18 @@
 #turn_count
-def turn_count
+def turn_count(board)
   count = 0 
-  index.each do |move|
+  board.each do |value|
     if value == "X" || value == "O"
       count += 1
     end
     return count
+  end
     
 def current_player(board)
-  if count.even?
-    puts "O"
+  if turn_count(board).even?
+    return "X"
   else 
-    puts "It is the second player"
+    return "O"
   end
 end
     
