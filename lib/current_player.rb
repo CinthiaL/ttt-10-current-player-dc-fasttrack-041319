@@ -8,7 +8,7 @@ def turn_count
     return count
     
 def current_player(count)
-  if count % 2 == 0 
+  if count.even?
     puts "It is the first player"
   else 
     puts "It is the second player"
